@@ -7,7 +7,6 @@ public class MatrixOperation {
         if(X[0].length != Y.length) {
             System.out.println("Matrix multiplication is not possible.");
         } else {
-            //Initialize the result matrix C
             int[][] Z = new int[X.length][Y[0].length];
             for (int i = 0; i < X.length; i++) {
                 for (int j = 0; j < Y[0].length; j++) {
