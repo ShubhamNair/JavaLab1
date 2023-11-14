@@ -3,22 +3,23 @@ package edu.neu.mgen;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-public class StudentClass{
+
+public class StudentClass {
     public static void main(String[] args) {
-        JavaClass javaClass = new JavaClass();
+        EngClass engClass = new EngClass();
         Student student1 = new Student(1, "John", "Doe");
         Student student2 = new Student(2, "Jane", "Doe");
         Student student3 = new Student(3, "Shubham", "Nair");
 
-        javaClass.addStudent(student1);
-        javaClass.addStudent(student2);
-        javaClass.addStudent(student3);
+        engClass.addStudent(student1);
+        engClass.addStudent(student2);
+        engClass.addStudent(student3);
 
-        javaClass.displayStudents();
+        engClass.displayStudents();
 
-        javaClass.removeStudent(1);
+        engClass.removeStudent(1);
 
-        javaClass.displayStudents();
+        engClass.displayStudents();
     }
 }
 
@@ -34,7 +35,7 @@ class Student {
     }
 }
 
-class JavaClass {
+class EngClass {
     List<Student> students = new ArrayList<>();
 
     public void addStudent(Student student) {
@@ -65,4 +66,3 @@ class JavaClass {
         }
     }
 }
-
